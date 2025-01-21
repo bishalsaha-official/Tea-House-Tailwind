@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House By Tailwind</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5483c4ea27.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -15,20 +21,6 @@
           }
         }
       </script>
-    <title>Tea House By Tailwind</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5483c4ea27.js" crossorigin="anonymous"></script>
-    <style>
-        .manrope-normal{
-            font-family: "Manrope", serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -56,9 +48,9 @@
     </header>
 
     <!-- Main Section -->
-    <main class="max-w-screen-xl mx-auto py-16">
+    <main class="max-w-screen-xl mx-auto">
         <!-- Our Featured Products Section -->
-        <section>
+        <section class="py-16">
             <h2 class="text-5xl text-center font-bold text-[#1C1C1C] mb-4">Our Featured Products</h2>
             <p class="max-w-4xl	text-center mx-auto text-[#777777]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             <!-- Product Card -->
@@ -82,6 +74,66 @@
                     <img class="mx-auto mb-3" src="images/tea-4.png" alt="tea">
                     <h3 class="text-2xl text-[#1C1C1C] font-bold mb-4">Green Tea</h3>
                     <p class="text-[#777777] font-semibold">Creamer could be replaced by fresh milk</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Great Tea, Freshly Presented Section -->
+        <section class="py-16">
+            <div class="flex justify-between gap-10">
+                <!-- Presented Image -->
+                <div class="w-2/4 grid grid-cols-2 grid-rows-3 gap-4">
+                    <div class="h-36 rounded-xl bg-[#FFE9E7]"></div>
+                    <div class="row-span-2 bg-[#FFE9E7] rounded-xl py-4 px-5">
+                        <img class="mx-auto" src="images/fresh-1.png" alt="">
+                    </div>
+                    <div class="row-span-2 rounded-xl bg-[#D9D9D9] py-4 px-5">
+                        <img class="mx-auto" src="images/fresh-2.png" alt="">
+                    </div>
+                    <div class="h-36 rounded-xl bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF]"></div>
+                </div>
+                <!-- Presented Text -->
+                <div class="w-2/4 px-5">
+                    <h2 class="text-4xl font-bold text-[#1C1C1C] mb-4">Great Tea, Freshly <br> Presented</h2>
+                    <p class="text-[#777777] font-medium mb-4">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                    <h3 class="text-xl font-bold text-[#1C1C1C]">Unique Taste</h3>
+                    <p class="text-[#777777] font-medium">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                    <br>
+                    <h3 class="text-xl font-bold text-[#1C1C1C]">Premium Quality</h3>
+                    <p class="text-[#777777] font-medium">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Super Clients Section -->
+        <section class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] py-10 px-10 rounded-2xl">
+            <div class="grid grid-cols-2 gap-10 items-center">
+                <!-- Client Text -->
+                <div>
+                    <h2 class="text-white font-bold text-5xl mb-5">Meet Our Super <br> Clients</h2>
+                    <p class="text-white max-w-md mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                    <button class="text-xl text-[#FF0000] font-bold py-3 px-5 rounded-lg bg-[#fff]">Show All</button>
+                </div>
+                <!-- Client Card -->
+                <div class="relative">
+                    <div class="absolute top-44 z-10 bg-[#ffffff] rounded-xl p-7 w-3/4 h-60">
+                        <img class="absolute -top-5 -left-5 border-4 border-[#fff] rounded-full" src="images/client.png" alt="">
+                        <p class="my-8 text-[#777777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                        <h4 class="font-bold text-[#1C1C1C]">Ilham Yuda</h4>
+                        <p class="text-[#777777]">Businessman</p>
+                    </div>
+                    <div class="relative left-32 opacity-40 bg-[#ffffff] rounded-xl p-7 w-3/4 h-60">
+                        <img class="absolute -top-5 -left-5 border-4 border-[#fff] rounded-full" src="images/client.png" alt="">
+                        <p class="my-8 text-[#777777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                        <h4 class="font-bold text-[#1C1C1C]">Ilham Yuda</h4>
+                        <p class="text-[#777777]">Businessman</p>
+                    </div>
+                    <div class="relative left-32 top-8 opacity-40 bg-[#ffffff] rounded-xl p-7 w-3/4 h-60">
+                        <img class="absolute -top-5 -left-5 border-4 border-[#fff] rounded-full" src="images/client.png" alt="">
+                        <p class="my-8 text-[#777777]">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                        <h4 class="font-bold text-[#1C1C1C]">Ilham Yuda</h4>
+                        <p class="text-[#777777]">Businessman</p>
+                    </div>
                 </div>
             </div>
         </section>
